@@ -4,31 +4,31 @@
 # Language:  Ruby
 #
 # License:   Apache-2.0
-# Copyright: (c) 2025 HyperSec Pty Ltd
+# Copyright: (c) 2025-2026 HYPERI PTY LIMITED
 
 class Macbash < Formula
   desc "Bash script compatibility checker for macOS"
   homepage "https://github.com/hyperi-io/macbash"
-  version "1.4.0"
+  version "1.5.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/hyperi-io/macbash/releases/download/v1.4.0/macbash-darwin-arm64.tar.gz"
-      sha256 "a15d38388900877aba49ed46b74a93765973426d48d1969af920b293a66fcdb8"
+      url "https://github.com/hyperi-io/macbash/releases/download/v1.5.0/macbash-darwin-arm64.tar.gz"
+      sha256 "700a194c8e72ae95d22600aae022ff9de08fba71cd115a17c44f2114bbd2a6ca"
     else
-      url "https://github.com/hyperi-io/macbash/releases/download/v1.4.0/macbash-darwin-amd64.tar.gz"
-      sha256 "e0d8c0e2b9b575fbb041a21a477c1c875b4ccad41f5739d5233699e5613f3d35"
+      url "https://github.com/hyperi-io/macbash/releases/download/v1.5.0/macbash-darwin-amd64.tar.gz"
+      sha256 "841ed961a59eb49fc9897eb7e3c6f617f501d3abb8d1b08003204fcbc5f3fa71"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/hyperi-io/macbash/releases/download/v1.4.0/macbash-linux-arm64.tar.gz"
-      sha256 "e5e826ecdcdd8b1a4ae4ec97764f644c84b563ead72f968e4608765313a19de9"
+      url "https://github.com/hyperi-io/macbash/releases/download/v1.5.0/macbash-linux-arm64.tar.gz"
+      sha256 "1dcada1f255c301ff159dc68af925f65c03af98528999cba6b20a92c48e6f2e3"
     else
-      url "https://github.com/hyperi-io/macbash/releases/download/v1.4.0/macbash-linux-amd64.tar.gz"
-      sha256 "96af19568ab2f98cfe2a98179ee54982d653c4ce7bd88d7a21a72c8db2a0d8e7"
+      url "https://github.com/hyperi-io/macbash/releases/download/v1.5.0/macbash-linux-amd64.tar.gz"
+      sha256 "21fabdd6304b06dadffd7fc02bc968936ef4c7fe616b222995fadb15dd4ed7d3"
     end
   end
 
